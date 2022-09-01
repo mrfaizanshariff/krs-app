@@ -1,0 +1,14 @@
+.navbar{
+  background-color: aquamarine;
+}
+
+.menu-list{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.menu-list a:hover{
+  color: black;
+  background-color: darkseagreen;
+  border-radius: 6px;
+}

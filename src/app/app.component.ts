@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'krs-app';
+  logo="https://bulma.io/images/bulma-logo.png";
+  
 }
