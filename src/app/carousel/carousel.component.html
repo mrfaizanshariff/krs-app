@@ -1,1 +1,26 @@
-<p>carousel works!</p>
+<div *ngIf="images && images.length > 0">
+  <div  *ngFor=" let image of images,let i=index">
+    <figure class="image">
+      <img [src]="image.imageSRC" [alt]="image.imageALT"
+        [ngClass]="{'image-isActive':selectedIndex==i}"
+        class="fade"
+      >
+
+    </figure>
+  </div>
+  <div *ngIf="indicators" class="dot-container">
+    <span class="dot" *ngFor="let dot of images,let i = index"
+    [ngClass]="{'isActive':selectedIndex==i}"
+    (click)="selectImage(i)"
+    ></span>
+  </div>
+
+  <div class="controls icon">
+    <div class="icon-right">
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="eBYCiZqKXOJ1" viewBox="0 0 48 48" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" style="width:125px"><rect width="8.208356" height="1.020728" rx="0.51" ry="0.51" transform="matrix(2.263294 1.139345 1.403423-2.787881 10.255165 18.556154)" fill="#2365e8" stroke-width="0"/><rect width="8.208356" height="1.020728" rx="0.51" ry="0.51" transform="matrix(2.223295-1.26714 1.531397 2.686954 10.255165 34.401139)" fill="#2365e8" stroke-width="0"/></svg>
+    </div>
+    <div class="icon-left">
+      <svg class="left-arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="eBYCiZqKXOJ1" viewBox="0 0 48 48" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" style="width:125px"><rect width="8.208356" height="1.020728" rx="0.51" ry="0.51" transform="matrix(2.263294 1.139345 1.403423-2.787881 10.255165 18.556154)" fill="#2365e8" stroke-width="0"/><rect width="8.208356" height="1.020728" rx="0.51" ry="0.51" transform="matrix(2.223295-1.26714 1.531397 2.686954 10.255165 34.401139)" fill="#2365e8" stroke-width="0"/></svg>
+    </div>
+  </div>
+</div>

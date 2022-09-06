@@ -1,0 +1,159 @@
+// div{
+//   display: block;
+//   width: 500px;
+//   height: 500px;
+//   border: 2px solid black;
+//   margin: auto;
+// }
+.nav{
+  position: sticky;
+}
+.tag-line{
+  width: max-content;
+  position: absolute;
+  top: 30%;
+  right: 50%;
+  transform: translate(50%,50%);
+}
+.tag-line{
+  text-align: center;
+  span{
+    color: #F7CD2E;
+  }
+  h1{
+    font-size: 42px;
+    font-weight: bolder;
+    color: black;
+    letter-spacing: 1.5px;
+  }
+
+  @media (max-width: 980px) {
+    width: 700px;
+  }
+  @media (max-width: 680px) {
+    width: 600px;
+  }
+  @media (max-width: 580px) {
+    width: 550px;
+  }
+  @media (max-width: 510px) {
+    width: 490px;
+    top: 5%;
+  }
+
+  @media (max-width: 410px) {
+    width: 400px;
+    letter-spacing: 1px;
+    top: 5%;
+  }
+}
+
+.About{
+  display: flex;
+  flex-direction: column;
+  margin-right: 20%;
+  margin-left: 20%;
+  h1{
+    font-size: 42px;
+    font-weight: bolder;
+    color: black;
+    letter-spacing: 1.5px;
+
+  }
+  p{
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    color: black;
+  }
+  span{
+    color: #F7CD2E;
+  }
+}
+.booking{
+  margin-right: 20%;
+  margin-left: 20%;
+  margin-top: 4%;
+  h1{
+    font-size: 42px;
+    font-weight: bolder;
+    color: black;
+    letter-spacing: 1.5px;
+  }
+  span{
+    color: #F7CD2E;
+  }
+  @media (max-width:1222px) {
+    h1{
+      text-align: center;
+    }
+  }
+  .booking-cards{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2%;
+    gap: 20px;
+   
+    .booking-card{
+      padding: 24px;
+      border: 2px solid #F7CD2E;
+      text-align: center;
+      img{
+        width: 300px;
+        height: 300px;
+        // background-image: url("https://drive.google.com/uc?export=view&id=1x9FCe4gPjbi-nJg6gTo-vWM3KlPGvfzO");
+      }
+
+      
+      @media (max-width: 980px) {
+        img{
+          width: 290px;
+          height: 290px;
+        }
+      }
+      @media (max-width: 680px) {
+        img{
+
+          width: 250px;
+          height: 250px;
+        }
+      }
+      @media (max-width: 580px) {
+        img{
+          width: 230px;
+          height: 230px;
+        }
+      }
+      @media (max-width: 510px) {
+        img{
+
+          width: 210px;
+          height: 210px;
+        }
+      }
+    
+      @media (max-width: 410px) {
+        img{
+
+          width: 140px;
+          height: 140px;
+        }
+      }
+    }
+    h1{
+      font-size: 22px;
+    font-weight: bolder;
+    color: black;
+    letter-spacing: 1.5px;
+    }
+    p{
+      font-size: 16px;
+    font-weight: bolder;
+    color: black;
+    letter-spacing: 1.5px;
+    }
+    @media (max-width:1222px) {
+      flex-direction: column;
+    }
+  }
+}
