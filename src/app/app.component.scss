@@ -19,7 +19,7 @@
 .tag-line{
   text-align: center;
   span{
-    color: #F7CD2E;
+    color: #03203C;
   }
   h1{
     font-size: 42px;
@@ -60,7 +60,7 @@
   display: flex;
   flex-direction: column;
   margin: 1% 2%;
-  box-shadow: 0 14px 14px -2px #F7CD2E;
+  box-shadow: 0 14px 14px -2px #03203C;
   padding: 20px;
   h1{
     font-size: 42px;
@@ -76,7 +76,7 @@
     font-size: 22px;
   }
   span{
-    color: #F7CD2E;
+    color: #03203C;
   }
   @media screen and (max-width:940px) {
     p{
@@ -105,7 +105,7 @@
     letter-spacing: 1.5px;
   }
   span{
-    color: #F7CD2E;
+    color: #03203C;
   }
   @media (max-width:1222px) {
     h1{
@@ -132,10 +132,10 @@
    
     .booking-card{
       padding: 24px;
-      border: 2px solid #F7CD2E;
+      border: 2px solid #03203C;
       text-align: center;
       // background: #eee;
-      box-shadow: 0 14px 14px -2px #F7CD2E;
+      box-shadow: 0 14px 14px -2px #03203C;
       cursor: pointer;
       border-radius: 4px;
       img{
@@ -211,7 +211,7 @@
   flex-direction: column;
   justify-content: center;
   margin: 2% 10%;
-  box-shadow: 0 14px 14px -2px #F7CD2E;
+  box-shadow: 0 14px 14px -2px #03203C;
   padding: 20px;
   h1{
     font-size: 42px;
@@ -220,7 +220,7 @@
   letter-spacing: 1.5px;
   }
   span{
-  color: #F7CD2E;
+  color: #03203C;
   }
 
   @media screen and (max-width:410px) {
