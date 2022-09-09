@@ -1,0 +1,16 @@
+<section class="container">
+  <article  class="review">
+    <h4 id="author">{{author}}</h4>
+    <a href="{{reviewLink}}" target="_blank" id="info">
+      {{info}}
+    </a>
+    <div class="button-container">
+      <button class="prev-btn btn" (click)="prevBtn()">
+        <i class="fas fa-chevron-left">&#8592;</i>
+      </button>
+      <button class="next-btn btn" (click)="nextBtn()">
+        <i class="fas fa-chevron-right">&#8594;</i>
+      </button>
+    </div>
+  </article>
+</section>

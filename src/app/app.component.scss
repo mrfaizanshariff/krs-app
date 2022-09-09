@@ -1,9 +1,14 @@
 
-.nav{
-  position: sticky;
+// .nav{
+//   position: sticky;
 
  
-}
+// }
+// .nav{
+//   position: fixed;
+//   width: 100%;
+//   z-index:100;
+// }
 .tag-line{
   width: max-content;
   position: absolute;
@@ -234,8 +239,10 @@ agm-map {
     height: 600px;
   }
 }
-.map{
 
+.reviews{
+  margin-top: 5%;
+  margin-bottom: 10%;
 }
 
 #gmap{

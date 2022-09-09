@@ -48,3 +48,13 @@ align-items: center;
     height: 30px;
   }
 }
+.footers{
+  flex: 1;
+  justify-items: center;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  @media screen and (max-width:410px) {
+    padding-top: 10px;
+  }
+}

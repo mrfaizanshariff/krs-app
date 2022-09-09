@@ -8,6 +8,7 @@ import { CarouselComponent } from './carousel/carousel.component';
 import { ActivitiesComponent } from './activities/activities.component';
 import { AmenitiesComponent } from './amenities/amenities.component';
 import { AgmCoreModule } from '@agm/core';
+import { ReviewComponent } from './review/review.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { AgmCoreModule } from '@agm/core';
     NavBarComponent,
     CarouselComponent,
     ActivitiesComponent,
-    AmenitiesComponent
+    AmenitiesComponent,
+    ReviewComponent
   ],
   imports: [
     AgmCoreModule.forRoot({

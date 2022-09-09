@@ -9,12 +9,10 @@ export class NavBarComponent implements OnInit {
 
   constructor() { }
   @Input() logo:string=''
-  burgerMenuActive:boolean=false
+  @Input() header:boolean=true
+  @Input()  footer:boolean=false
   ngOnInit(): void {
   }
 
-  burgerIconClicked(){
-    this.burgerMenuActive=!this.burgerMenuActive
-    console.log('clicked');
-  }
+
 }
