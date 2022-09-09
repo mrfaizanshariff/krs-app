@@ -1,0 +1,46 @@
+.container{
+  margin-top: 42px;
+  padding-left: 20px;
+  .content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 50px;
+    padding-bottom: 10px;
+    span{
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      color: black;
+      font-size: 22px;
+    }
+
+    @media  (max-width:940px) {
+      grid-template-columns: 1fr 1fr;
+      span{
+      font-size: 18px;
+      }
+    }
+    @media  (max-width:620px) {
+      grid-template-columns: 1fr 1fr;
+      span{
+      font-size: 14px;
+      }
+    }
+    @media screen and (max-width:410px) {
+      gap: 20px;
+      span{
+        font-size: 12px;
+      letter-spacing: 1px;
+      }
+      .svg{
+        width: 50px;
+        height: 50px;
+      }
+    }
+  }
+}
+
+.flex-column{
+  display: flex;
+  flex-direction: column;
+}

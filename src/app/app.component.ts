@@ -1,12 +1,17 @@
-import { Component } from '@angular/core';
+import { AgmMap } from '@agm/core';
+import { Component, OnInit } from '@angular/core';
 import { carouselImages } from './carousel/carousel.component';
+
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
+  ngOnInit(): void {
+    
+  }
   title = 'krs-app';
   logo="assets/IMG-20220425-WA0013.png.jpg";
   images:carouselImages[]=[{
@@ -35,4 +40,8 @@ export class AppComponent {
   },
 
   ]
+  lat = 12.452314366500843;
+  lng = 76.53187546839366;
+
+  
 }

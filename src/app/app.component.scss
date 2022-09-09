@@ -1,12 +1,8 @@
-// div{
-//   display: block;
-//   width: 500px;
-//   height: 500px;
-//   border: 2px solid black;
-//   margin: auto;
-// }
+
 .nav{
   position: sticky;
+
+ 
 }
 .tag-line{
   width: max-content;
@@ -42,17 +38,25 @@
   }
 
   @media (max-width: 410px) {
-    width: 400px;
-    letter-spacing: 1px;
-    top: 5%;
+    width: 350px;
+    top: 0%;
+    h1{
+      font-size: 28px;
+      letter-spacing: 1px;
+    }
+    span{
+      font-family: cursive;
+      font-weight: bolder;
+    }
   }
 }
 
 .About{
   display: flex;
   flex-direction: column;
-  margin-right: 20%;
-  margin-left: 20%;
+  margin: 1% 2%;
+  box-shadow: 0 14px 14px -2px #F7CD2E;
+  padding: 20px;
   h1{
     font-size: 42px;
     font-weight: bolder;
@@ -64,15 +68,31 @@
     font-weight: 700;
     letter-spacing: 1.5px;
     color: black;
+    font-size: 22px;
   }
   span{
     color: #F7CD2E;
   }
+  @media screen and (max-width:940px) {
+    p{
+      font-size: 18px;
+      margin: 1% 10%;
+    }
+  }
+  @media screen and (max-width:410px) {
+    p{
+      font-size: 16px;
+    }
+    padding: 10px;
+    margin: 1% 6%;
+    h1{
+      font-size: 32px;
+      font-family: cursive;
+    }
+  }
 }
 .booking{
-  margin-right: 20%;
-  margin-left: 20%;
-  margin-top: 4%;
+  margin: 4% 16%;
   h1{
     font-size: 42px;
     font-weight: bolder;
@@ -87,6 +107,17 @@
       text-align: center;
     }
   }
+  @media screen and (max-width:410px) {
+    // p{
+    //   font-size: 16px;
+    //   margin: 1% 5%;
+    // }
+    h1{
+      font-size: 32px;
+      // font-family: cursive;
+    }
+    
+  }
   .booking-cards{
     display: flex;
     align-items: center;
@@ -98,9 +129,14 @@
       padding: 24px;
       border: 2px solid #F7CD2E;
       text-align: center;
+      // background: #eee;
+      box-shadow: 0 14px 14px -2px #F7CD2E;
+      cursor: pointer;
+      border-radius: 4px;
       img{
         width: 300px;
         height: 300px;
+        border-radius: 4px;
         // background-image: url("https://drive.google.com/uc?export=view&id=1x9FCe4gPjbi-nJg6gTo-vWM3KlPGvfzO");
       }
 
@@ -138,6 +174,12 @@
           width: 140px;
           height: 140px;
         }
+        span{
+          font-family: cursive;
+        }
+        h1{
+          font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
       }
     }
     h1{
@@ -155,5 +197,52 @@
     @media (max-width:1222px) {
       flex-direction: column;
     }
+
+  }
+  
+}
+.activities{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 2% 10%;
+  box-shadow: 0 14px 14px -2px #F7CD2E;
+  padding: 20px;
+  h1{
+    font-size: 42px;
+  font-weight: bolder;
+  color: black;
+  letter-spacing: 1.5px;
+  }
+  span{
+  color: #F7CD2E;
+  }
+
+  @media screen and (max-width:410px) {
+    h1{
+      font-size: 32px;
+      // font-family: cursive;
+    }
+    padding: 2px;
+    margin: 2% 6%;
+  }
+}
+
+agm-map {
+  height: 480px;
+  @media screen and (max-width:410px){
+    height: 600px;
+  }
+}
+.map{
+
+}
+
+#gmap{
+  height: 480px;
+  width: 100%;
+  @media screen and (max-width:410px){
+    width: 300px;
+    height: 600px;
   }
 }
