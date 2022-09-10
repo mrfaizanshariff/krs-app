@@ -9,7 +9,7 @@
     width: 400px;
     height: 400px;
   }
-  @media screen and (max-width:410px) {
+  @media screen and (max-width:450px) {
     width: 300px;
     height: 360px;
   }
@@ -40,7 +40,7 @@
   // justify-content: center;
   align-items: center;
   padding:10px 30px 30px 30px;
-  background-color: #12192c;
+  background-color: #f2f2f2;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   font-family: "Open Sans", sans-serif;
   border-radius: 12px;
@@ -56,11 +56,11 @@
 }
 
 #author {
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 600;
   text-transform: capitalize;
   margin-top: 10px;
-  color:#FFFB7D
+  color:#03203C
 }
 
 #job {
@@ -72,12 +72,12 @@
 
 #info {
   height: 100px;
-  font-size: 18px;
-  color: #fff;
+  font-size: 12px;
+  color: #03203C;
   font-weight: 400;
   // text-align: center;
   margin-bottom: 30px;
-  @media screen and (max-width:410px) {
+  @media screen and (max-width:450px) {
     font-size: 14px;
   }
 }
@@ -95,9 +95,9 @@
   border-style: none;
   // font-size: 30px;
   margin: 0 10px;
-  color: #85FFBD;
+  color: #03203C;
   cursor: pointer;
-  background-color:#12192c;
+  background-color:#f2f2f2;
 }
 .credit a{
   text-decoration: none;
